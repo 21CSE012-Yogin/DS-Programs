@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int getNumber;
+  int fact = 1;
+  printf("Enter the number : ");
+	scanf("%d",&getNumber);
+	for(int i = 1 ; i <= getNumber ; i++)
+	{
+		fact = fact * i;
+	}
+	printf("Factorial of %d is %d.",getNumber,fact);
+	return 0;
+}
+
+
+SAMPLE OUTPUT:
+
+Enter the number : 6
+Factorial of 6 is 720.
