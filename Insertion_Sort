@@ -1,0 +1,50 @@
+CODE
+
+
+#include<stdio.h>
+#include<conio.h>
+void main( )
+{
+    int array[10];
+    int i,j;
+    int k,noOfElements;
+    printf("How many elements you want to sort?\n");
+    scanf("%d",&noOfElements);
+    printf("\nEnter the Elements into an array:\n");
+    for ( i = 0 ; i < noOfElements ; i++ )
+    {
+        scanf("%d",&a[i]);
+    }
+    for( i = 1 ; i < noOfElements ; i++ )
+    {
+        k = a[i];
+        for( j = i - 1 ; j >= 0 && k < a[j] ; j-- )
+        {
+            a[ j + 1] = a[j];
+            a[ j + 1] = k;
+        }
+    } 
+    printf("\n\n Elements after sorting: \n");
+    for( i = 0 ; i < noOfElements ; i++ )
+        printf("%d\n", a[i]);
+    getch( );
+}
+
+
+OUTPUT
+
+How many elements you want to sort?
+4
+
+Enter the Elements into an array:
+4
+5
+5
+2
+
+
+ Elements after sorting: 
+2
+4
+5
+5
